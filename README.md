@@ -1,1 +1,1 @@
-# DataScience
+# Data science practice
