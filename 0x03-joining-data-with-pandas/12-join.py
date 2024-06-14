@@ -20,7 +20,7 @@ tracks_invoices = non_mus_tcks.merge(top_invoices)
 top_tracks = non_mus_tcks[non_mus_tcks['tid'].isin(tracks_invoices['tid'])]
 
 # Group the top_tracks by gid and count the tid rows
-cnt_by_gid = top_tracks.groupby(['gid'], as_index=False).agg({'tid':'count'})
+cnt_by_gid = top_tracks.groupby(['gid'], as_index=False).agg({'tid': 'count'})
 
 # Merge the genres table to cnt_by_gid on gid and print
 print(cnt_by_gid.merge(genres))

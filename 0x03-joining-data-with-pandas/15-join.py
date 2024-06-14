@@ -2,7 +2,8 @@
 """
 Concatenate and merge to find common songs
 
-Using concatenation, and semi joins for combining data vertically and using anti joins.
+Using concatenation, and semi joins for combining data
+vertically and using anti joins.
 """
 
 import pandas as pd
